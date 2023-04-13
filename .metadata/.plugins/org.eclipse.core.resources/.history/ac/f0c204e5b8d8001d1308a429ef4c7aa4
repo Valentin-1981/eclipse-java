@@ -1,0 +1,71 @@
+package java_1;
+
+//import javax.swing.BorderFactory;
+//import javax.swing.ButtonGroup;
+//import javax.swing.JCheckBox;
+//import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+//import javax.swing.JRadioButton;
+//import javax.swing.border.Border;
+
+public class java {
+
+	static JFrame jFrame = getFrame();
+	
+	static JPanel jPanel = new JPanel();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		jFrame.add(jPanel);
+//		jPanel.add(new JPasswordField(20));
+//		jPanel.add(new JCheckBox("checkbox label"));
+		JMenuBar jMenuBar = new JMenuBar();
+		JMenu file = new JMenu("File");
+		JMenu edit = new JMenu("Edit");
+		file.add(new JMenuItem("Open"));
+		file.add(new JMenuItem("Save"));
+		file.addSeparator();
+		file.add(new JMenuItem("Exit"));
+		
+		
+		
+		jMenuBar.add(file);
+		jMenuBar.add(edit);
+		
+		jFrame.setJMenuBar(jMenuBar);
+		jFrame.revalidate();
+		
+		
+		
+		
+		
+//		JRadioButton radioButton1 = new JRadioButton("one");
+//		JRadioButton radioButton2 = new JRadioButton("two");
+//		ButtonGroup buttonGroup = new ButtonGroup();
+//		buttonGroup.add(radioButton1);
+//		buttonGroup.add(radioButton2);
+//		jPanel.add(radioButton1);
+//		jPanel.add(radioButton2);
+//		Border border = BorderFactory.createEtchedBorder();
+//		Border border1 = BorderFactory.createTitledBorder(border, "title");
+//		JComboBox<String> comboBox = new JComboBox();
+//		comboBox.addItem("one");
+//		comboBox.addItem("two");
+//		comboBox.addItem("three");
+//		jPanel.add(comboBox);
+//		jPanel.setBorder(border1);
+	}
+	
+	
+	
+	static JFrame getFrame() {
+		JFrame jFrame = new JFrame();
+		jFrame.setVisible(true);
+		jFrame.setBounds(750, 250, 500, 500);
+		jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		return jFrame;		
+	}
+}
