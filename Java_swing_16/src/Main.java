@@ -30,8 +30,6 @@ public class Main {
 
     }
 
-
-
     static JFrame getFrame() {
         JFrame jFrame = new JFrame();
         jFrame.setVisible(true);
